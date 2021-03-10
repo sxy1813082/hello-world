@@ -20,15 +20,25 @@
 
 ## 三、创建方法
 - 可以直接用new 一个flutter的文件创建
-- 代码如下：
-<code><p>import 'package:flutter/material.dart';<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;void main() {<br>
+- 查找主安卓工作室工具栏
+- 在目标选择器中，选择一个Android设备来运行应用程序。如果没有被列为可用，请选择工具>安卓>AVD管理器，并在那里创建一个
+- 单击工具栏中的运行图标，或调用菜单项"运行 ">"运行"。应用程序构建完成后，您将在设备上看到入门应用。
+- 实现一个hello world的代码如下：
+  <p>import 'package:flutter/material.dart';<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;void main() {<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runApp(Center(<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child: Text('Hello World!')<br>
-&nbsp;&nbsp;&nbsp;&nbsp;));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-</p>
-</code>
+  &nbsp;&nbsp;&nbsp;&nbsp;));<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+- 小部件的创建
+    - Text：
+        - 该小部件允许您在应用程序内创建一系列样式文本。Text
+    - Row, Column：
+        - 这些弹性小部件可让您在水平（）和垂直（）方向创建灵活的布局。这些对象的设计基于 Web 的 Flexbox 布局模型。RowColumn
+    - Stack：
+        - 小部件不是以线性为导向（水平或垂直），而是让您按油漆顺序将小部件放在彼此的顶部。然后，您可以使用"定位"小部件在堆栈的顶部、右侧、底部或左边缘放置它们。堆栈基于 Web 的绝对定位布局模型。StackStack
+    - Container：
+        - 小部件允许您创建一个矩形视觉元素。容器可以装饰有盒装装饰，如背景、边框或阴影。A 还可以对其尺寸施加边距、填充和约束。此外，还可以使用矩阵在三维空间中进行转换。ContainerContainerContainer
 
 ## 四、框架结构
 - 主要包括以下三个结构
